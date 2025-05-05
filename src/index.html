@@ -61,6 +61,19 @@
     </main>
 
 
+    <!-- Модальное окно корзины -->
+    <div class="cart-modal">
+        <div class="cart-modal__content">
+            <div class="cart-modal__header">
+                <h2 class="cart-modal__title">Корзина</h2>
+                <button class="cart-modal__clear">Очистить корзину</button>
+            </div>
+            <div class="cart-modal__items"></div>
+            <p class="cart-modal__total">Итого: 0 руб.</p>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
@@ -79,6 +92,7 @@
             },
         });
     </script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
