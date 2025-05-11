@@ -54,7 +54,17 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = product.image;
         img.alt = product.name;
 
+        const quickView = document.createElement('div');
+        quickView.classList.add('product-quick');
+      
+        const quickViewBtn = document.createElement('button');
+        quickViewBtn.classList.add('product-quick-btn');
+        quickViewBtn.innerText = 'Быстрый просмотр';
+
+        quickView.appendChild(quickViewBtn);
+
         imgWrapper.appendChild(img);
+        imgWrapper.appendChild(quickView);
 
         // Добавление цен
         if (product.oldPrice) {
